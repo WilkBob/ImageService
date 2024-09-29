@@ -1,0 +1,10 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+my_image_processing_env/
+
+# Secrets
+app/middleware/web-size-firebase-adminsdk-n54om-d838700b79.json
