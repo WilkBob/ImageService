@@ -56,3 +56,5 @@ Welcome to the Sizeable Image Processor! This open-source project is designed to
 - **Resize Image**: `POST /resize`
 - **Resize Multiple Images**: `POST /resize-multiple`
 - **Convert to WebP**: `POST /convert-webp`
+- **Convert Multiple Images**: `POST /convert-webp`
+- **Progressify**: `POST /component`
