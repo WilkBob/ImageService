@@ -51,7 +51,7 @@ async def component(
                 thumbnail_image = image.resize((thumbnail_size, int(thumbnail_size * image.height / image.width)))
                 thumbnail_webp_image = convert_to_webp(thumbnail_image)
                 thumbnail_img_byte_arr = io.BytesIO()
-                thumbnail_webp_image.save(thumbnail_img_byte_arr, format='WEBP')
+                thumbnail_webp_image.save(thumbnail_img_byte_arr, format='WEBP', quality=100)
                 thumbnail_img_byte_arr.seek(0)
                 thumbnail_filename = f"images/{file.filename.rsplit('.', 1)[0]}_thumb.webp"
                 zip_file.writestr(thumbnail_filename, thumbnail_img_byte_arr.getvalue())
