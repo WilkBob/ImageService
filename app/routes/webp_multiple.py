@@ -11,7 +11,7 @@ router = APIRouter()
 @router.post("/webp-multiple/")
 async def convert_to_webp_multiple(
     files: list[UploadFile] = File(...),
-    quality: int = Query(100, description="Quality of the WebP images"),
+    quality: int = Query(80, description="Quality of the WebP images"),
     user: dict = Depends(conditional_token_verification)
 ):
     processed_images = []
